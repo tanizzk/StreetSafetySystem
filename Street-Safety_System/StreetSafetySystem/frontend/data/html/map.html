@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hazard Map</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="map-style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hazard Map</h1>
+    <div id="map"></div>
+
+    <!-- Hazard Report Form -->
+    <div id="report-form">
+      <h2>Report a Hazard</h2>
+      <input type="text" id="crime-type" placeholder="Type of hazard" />
+      <select id="crime-risk">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="text" id="crime-warning" placeholder="Warning message" />
+      <button id="submit-crime">Submit</button>
+    </div>
+  </div>
+
+  <!-- Your JS -->
+  <script src="map-script.js"></script>
+</body>
+</html>
